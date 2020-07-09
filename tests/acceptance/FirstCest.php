@@ -19,6 +19,7 @@ class FirstCest
         $birthday = '22/12/1977';
         $I->fillField('firstName', $name);
         $I->fillField('birthday', $birthday);
+        $I->pause();
         $I->click('Calculate age' );
         $I->see('42', 'h2');
         $I->see('Hi '.$name, 'h1');
