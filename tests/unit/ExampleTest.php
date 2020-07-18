@@ -1,7 +1,7 @@
 <?php
 require_once 'AgeCalculator.php';
 
-class ExampleTest extends \Codeception\Test\Unit
+class AgeCalculatorTest extends \Codeception\Test\Unit
 {
     /**
      * @var \UnitTester
