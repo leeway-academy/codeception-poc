@@ -1,13 +1,8 @@
 <?php 
 
-class FirstCest
+class AgeCalculatorCest
 {
     public function _before(AcceptanceTester $I)
-    {
-    }
-
-    // tests
-    public function tryToTest(AcceptanceTester $I)
     {
     }
 
