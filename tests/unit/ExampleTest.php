@@ -1,4 +1,6 @@
-<?php 
+<?php
+require_once 'AgeCalculator.php';
+
 class ExampleTest extends \Codeception\Test\Unit
 {
     /**
@@ -15,8 +17,9 @@ class ExampleTest extends \Codeception\Test\Unit
     }
 
     // tests
-    public function testSomeFeature()
+    public function testCalculatorWorks()
     {
-
+        $calculator = new AgeCalculator(new DateTimeImmutable('2010-07-15'));
+        $this->assertEquals(32, $calculator->getAge(new DateTimeImmutable('1977-12-22')));
     }
 }
